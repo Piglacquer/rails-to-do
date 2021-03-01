@@ -1,0 +1,12 @@
+<h1>Fresh Task</h1>
+<p>Find me in app/views/tasks/new.html.erb</p>
+
+<%= form_for @task do |f| %>
+ <%# |f| form builder %>
+	<%= f.label "Title:" %><br>
+	<%= f.text_field :title %><br>
+
+	<%= f.label "Details:" %><br>
+	<%= f.text_area :details %><br>
+	<%= f.submit %>
+<% end %>
